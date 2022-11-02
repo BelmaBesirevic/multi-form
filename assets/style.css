@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page__container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #e3daff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.form-container {
+  margin: 0 auto;
+  background-color: #fff;
+  width: 500px;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.form-header {
+  text-align: center;
+}
+
+.form-header h2 {
+  margin: 0;
+  
+}
+
+.steps {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0px;
+  border-bottom: 1px solid #963d5a;
+}
+
+.steps p {
+  background-color: #bfbfbf;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+form {
+  overflow: hidden;
+}
+
+.form-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  animation: slide-in 0.5s ease;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(50rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.form-item .input-control {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 8px;
+  font-size: 1.1rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 11px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: hsl(232, 64%, 64%);
+}
+
+.btn-secondary {
+  background-color: hsl(340, 42%, 61%);
+  
+}
